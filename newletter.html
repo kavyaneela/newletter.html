@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Email Subscription Form</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            body{
+                background: #386aeb;
+                width: 100%;
+                height: 100vh;
+                position: relative;
+            }
+
+            .container{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }   
+
+            .container h1{
+                font-size: 40px;
+                color: white;
+                margin-bottom: 20px;
+            }
+
+            .container .email{
+                height: 50px;
+                position: relative;
+            }
+
+            .container .email input{
+                height: 100%;
+                width: 450px;
+                padding-left: 50px;
+                font-size: 18px;
+                outline: none;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 50px;
+                border: 2px soild coral;
+            }
+
+            .container .email .icon{
+                position: absolute;
+                left: -25%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 18px;
+            } 
+
+            .container .email button{
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                transform: translate(-50%,-50%);
+                padding: 8px 12px;
+                cursor: pointer;
+                border-radius: 50px;
+                border: 1px soild gray;
+                outline: none;
+                background: #286aeb;
+                color: white;
+                transition: 0.3s;
+            }
+
+            .container .email button:hover{
+                background: #1b3d94;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Subscribe to our Newsletter</h1>
+            <div class="email">
+                <input type="email" placeholder="Email">
+                <i class="fa-solid fa-envelope"></i>
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </body>
+</html>
